@@ -1,0 +1,7 @@
+<mj-style>
+	@media all and (max-width: 48px) {
+		div[style*="color:#F45e46;"] {
+			text-align: center !important
+		}
+	}
+</mj-style>

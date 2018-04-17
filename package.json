@@ -1,0 +1,43 @@
+{
+	"name": "NextEmail",
+	"description": "Newsletter starter project",
+	"version": "0.1",
+	"keywords": [
+		"gulp, mjml"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/SRocevas/next-email.git"
+	},
+	"main": "gulpfile.js",
+	"dependencies": {
+		"gulp": "3.9.1",
+		"run-sequence": "2.2.1",
+		"gulp-mjml": "3.0.0",
+		"gulp-htmlhint": "2.1.0",
+		"gulp-htmlmin": "4.0.0",
+		"gulp-html-beautify": "1.0.1",
+		"gulp-task-loader": "1.4.4",
+		"gulp-plumber": "1.2.0",
+		"gulp-connect": "5.5.0",
+		"gulp-open": "3.0.1",
+		"gulp-cache": "1.0.2",
+		"gulp-clean": "0.4.0",
+		"gulp-imagemin": "4.1.0",
+		"gulp-zip": "4.1.0"
+	},
+	"scripts": {
+		"start": "gulp start",
+		"start-safe": "gulp start-safe",
+		"zip": "gulp zip"
+	},
+	"author": "Šarūnas Ročevas",
+	"license": "MIT License",
+	"bugs": {
+		"url": "https://github.com/SRocevas/next-email/issues"
+	},
+	"homepage": "https://github.com/SRocevas/next-email",
+	"devDependencies": {
+		"check-dependencies": "1.1.0"
+	}
+}
