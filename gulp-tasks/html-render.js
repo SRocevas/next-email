@@ -1,9 +1,8 @@
 module.exports = function () {
 	var gulp = require('gulp'),
+		config = require('../gulp.config.js')(),
 		mjml = require('gulp-mjml'),
-		htmlmin = require('gulp-htmlmin'),
-		htmlbeautify = require('gulp-html-beautify'),
-		config = require('../gulp.config.js')();
+		connect = require('gulp-connect');
 
 	function swallowError(error) {
 		// If you want details of the error in the console
@@ -14,5 +13,6 @@ module.exports = function () {
 	return gulp.src(config.html.src)
 		.pipe(mjml())
 		.on('error', swallowError)
-		.pipe(gulp.dest(config.html.dest));
+		.pipe(gulp.dest(config.html.dest))
+		.pipe(connect.reload());
 };
