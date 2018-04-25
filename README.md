@@ -4,7 +4,7 @@
 
 Starter base for Email templating with Gulp, MJML. It has a Gulp-powered build system with these features:
 
-- [MJML](https://mjml.io/) engine
+- [MJML](https://mjml.io/) engine (Chnging to Zurb emails)
 - Live server with auto reload feature
 - Sass linting integration and configuration (Working)
 - Automated image optimization
@@ -49,7 +49,7 @@ $ npm run zip
 
 ## TODO
 - [ ] HTML minifier and beautifier
-- [ ] Update to MJML 4 syntax
+- [ ] Change MJML to Zurb emails
 - [ ] Sass integration
 - [ ] Seperate html components
 - [ ] Send test emails

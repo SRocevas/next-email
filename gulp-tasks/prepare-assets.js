@@ -2,8 +2,10 @@ module.exports = function (done) {
 	var runSequence = require('run-sequence');
 
 	return runSequence(
+		'clean',
 		'image-optimization',
 		'html-render',
-		'html-hint',
-		done);
+		'compile-scss',
+		'inline-css'
+	done);
 };

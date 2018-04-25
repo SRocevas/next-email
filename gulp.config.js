@@ -10,8 +10,7 @@ module.exports = function () {
 		],
 		html: {
 			src: [
-				`./${srcFolder}/**/*.mjml`,
-				`!./${srcFolder}/style/**/*.mjml`
+				`./${srcFolder}/html/**/*.html`
 			],
 			dest: `./${distFolder}/`,
 			options: {
@@ -24,6 +23,9 @@ module.exports = function () {
 			src: [
                 `./${srcFolder}/scss/**/*.scss`,
                 `./${srcFolder}/components/**/*.scss`,
+            ],
+			include: [
+                `./node_modules/foundation-emails/`,
             ],
 			lint: [
                 `./${srcFolder}/scss/**/*.scss`,

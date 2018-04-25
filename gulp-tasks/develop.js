@@ -3,11 +3,11 @@ module.exports = function () {
 		runSequence = require('run-sequence').use(gulp);
 
 	runSequence(
-		'clean',
 		'prepare-assets',
 		'clear-image-cache',
 		'watch-html',
 		'watch-images-optimize',
+		'watch-scss',
 		'live-server'
 	);
 };

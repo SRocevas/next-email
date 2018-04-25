@@ -3,7 +3,7 @@
 	"description": "Newsletter starter project",
 	"version": "0.1.0",
 	"keywords": [
-		"gulp, mjml"
+		"gulp, zurb, emails"
 	],
 	"repository": {
 		"type": "git",
@@ -12,18 +12,25 @@
 	"main": "gulpfile.js",
 	"dependencies": {
 		"gulp": "3.9.1",
+		"foundation-emails": "^2.2.1",
+		"inky": "^1.3.7",
 		"run-sequence": "2.2.1",
-		"gulp-mjml": "3.0.0",
-		"gulp-htmlhint": "2.1.0",
-		"gulp-htmlmin": "4.0.0",
-		"gulp-html-beautify": "1.0.1",
 		"gulp-task-loader": "1.4.4",
 		"gulp-plumber": "1.2.0",
+		"gulp-htmlmin": "4.0.0",
+		"gulp-html-beautify": "1.0.1",
 		"gulp-connect": "5.5.0",
 		"gulp-open": "3.0.1",
 		"gulp-cache": "1.0.2",
 		"gulp-clean": "0.4.0",
 		"gulp-imagemin": "4.1.0",
+		"gulp-inline-css": "3.0.0",
+		"autoprefixer": "8.2.0",
+		"gulp-autoprefixer": "5.0.0",
+		"gulp-sass": "3.2.1",
+		"gulp-concat": "2.6.1",
+		"gulp-sass-lint": "1.3.4",
+		"gulp-uncss": "1.0.6",
 		"gulp-zip": "4.1.0"
 	},
 	"scripts": {
