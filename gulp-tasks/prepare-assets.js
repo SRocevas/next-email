@@ -6,6 +6,6 @@ module.exports = function (done) {
 		'image-optimization',
 		'html-render',
 		'compile-scss',
-		'inline-css'
+		'inline-css',
 	done);
 };
