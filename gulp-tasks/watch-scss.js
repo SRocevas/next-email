@@ -1,6 +1,11 @@
+const gulp = require('gulp'),
+	runSequence = require('run-sequence').use(gulp),
+	watch = require('gulp-watch'),
+	config = require('../gulp.config.js')();
+
 module.exports = function () {
-	var gulp = require('gulp'),
-		config = require('../gulp.config.js')();
-	
-	gulp.watch(config.scss.src, ['compile-scss']);
+	watch(
+		config.scss.src,
+		() => runSequence('compile-scss', 'live-reload')
+	);
 };
