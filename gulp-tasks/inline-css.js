@@ -3,7 +3,7 @@ module.exports = function () {
 		inlineCss = require('gulp-inline-css'),
 		config = require('../gulp.config.js')();
 
-	return gulp.src('/dist/*.html')
+	return gulp.src(config.html.dest + '/*.html')
 		.pipe(inlineCss({
 			applyStyleTags: false,
 			applyLinkTags: true,
@@ -11,5 +11,5 @@ module.exports = function () {
 			removeStyleTags: false,
 			removeLinkTags: false
 		}))
-		.pipe(gulp.dest('build/'));
+		.pipe(gulp.dest(config.distFolder + '/build'));
 };

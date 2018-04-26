@@ -12,7 +12,7 @@ module.exports = function () {
 			src: [
 				`./${srcFolder}/html/**/*.html`
 			],
-			dest: `./${distFolder}/`,
+			dest: `./${distFolder}/html/`,
 			options: {
 				beautify: {
 					indentSize: 4
