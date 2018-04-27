@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+	runSequence = require('run-sequence'),
 	config = require('./gulp.config.js')();
 
 require('gulp-task-loader')();
@@ -9,21 +10,41 @@ gulp.task("start-safe", function () {
 		verbose: true
 	}, function () {
 
-		return gulp.start('develop');
+		return runSequence(
+			'clean',
+			'prepare-assets',
+			'watch-html',
+			'watch-images',
+			'watch-scss',
+			'live-server'
+		);
 	});
 });
 
 gulp.task("start", function () {
 
-	return gulp.start('develop');
+	return runSequence(
+		'clean',
+		'prepare-assets',
+		'watch-all',
+		'live-server'
+	);
 });
 
 gulp.task("zip", function () {
 
-	return gulp.start('prepare-archive');
+	return runSequence(
+		'clean',
+		'prepare-assets',
+		'compress-files'
+	);
 });
 
 gulp.task("mail", function () {
 
-	return gulp.start('prepare-mail');
+	return runSequence(
+		'clean',
+		'prepare-assets',
+		'send-mail'
+	);
 });
