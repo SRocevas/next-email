@@ -22,3 +22,8 @@ gulp.task("zip", function () {
 
 	return gulp.start('archive');
 });
+
+gulp.task("mail", function () {
+
+	return gulp.start('prepare-mail');
+});

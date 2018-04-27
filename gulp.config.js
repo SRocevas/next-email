@@ -1,3 +1,5 @@
+var mailerConfig = require('./mailer.config')();
+
 module.exports = function () {
 	const srcFolder = 'src';
 	const distFolder = 'dist';
@@ -52,7 +54,8 @@ module.exports = function () {
 				port: '8000',
 				livereload: true
 			}
-		}
+		},
+		nodemailer: mailerConfig
 	};
 
 	return config;
