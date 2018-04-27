@@ -46,15 +46,21 @@ ZIP compress files:
 $ npm run zip
 ```
 
+send a test email using your default configuration in nodemailer.config.js
+
+```
+$ npm run mail --template=NAME
+```
+
 
 ## TODO
 
 - [X] Change MJML to Zurb emails
 - [X] Sass integration
 - [ ] HTML minifier and beautifier
-- [ ] Inline css
+- [X] Inline css
 - [ ] Seperate html components
-- [ ] Send test emails
+- [X] Send test emails
 
 
 ## License
