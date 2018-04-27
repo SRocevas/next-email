@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = function (done) {
 	var gulp = require('gulp'),
 		imagemin = require('gulp-imagemin'),
 		cache = require('gulp-cache'),
@@ -11,5 +11,6 @@ module.exports = function () {
 				optimizationLevel: 7
 			})
 		])))
-		.pipe(gulp.dest(config.images.dest));
+		.pipe(gulp.dest(config.images.dest))
+		cache.clearAll(done);
 };
