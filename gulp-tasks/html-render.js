@@ -1,7 +1,6 @@
 module.exports = function () {
 	var gulp = require('gulp'),
 		inky = require('inky'),
-		htmlmin = require('gulp-htmlmin'),
 		panini = require('panini'),
 		config = require('../gulp.config.js')();
 
@@ -14,7 +13,10 @@ module.exports = function () {
 	return gulp.src(config.html.src)
 		.pipe(panini({
 			root: 'src/html',
-			layouts: 'src/layout'
+			layouts: 'src/layouts',
+			pageLayouts: {
+				'components': 'components'
+			}
 		}))
 		.pipe(inky())
 		.on('error', swallowError) //.pipe(htmlmin({collapseWhitespace: true,minifyCSS: true}))
