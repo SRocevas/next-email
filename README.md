@@ -46,11 +46,13 @@ ZIP compress files:
 $ npm run zip
 ```
 
-send a test email using your default configuration in nodemailer.config.js
+Send a test email using your default configuration in nodemailer.config.js
 
 ```
 $ npm run mail --template=NAME
 ```
+
+> gulp  send-mail --template=newsletter
 
 
 ## TODO

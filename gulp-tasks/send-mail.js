@@ -19,7 +19,7 @@ module.exports = function () {
 	mailOptions.subject = argv.subject ? argv.subject : config.nodemailer.mailOptions.subject;
 
 	// get template contents and send email
-	fs.readFile(config.distFolder + '/build/' + template + '.html', 'utf8', function (err, data) {
+	fs.readFile(config.distFolder + '/' + template + '.html', 'utf8', function (err, data) {
 		if (err) {
 			handleError(err);
 		}
