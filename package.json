@@ -1,7 +1,7 @@
 {
 	"name": "NextEmail",
 	"description": "Newsletter starter project",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"keywords": [
 		"gulp, zurb, emails"
 	],
@@ -36,7 +36,10 @@
 		"gulp-zip": "4.1.0",
 		"nodemailer": "4.6.1",
 		"yargs": "3.21.0",
-		"fs": "0.0.2"
+		"fs": "0.0.2",
+		"siphon-media-query": "^1.0.0",
+		"lazypipe": "^1.0.1",
+		"gulp-replace": "^0.5.4"
 	},
 	"scripts": {
 		"start": "gulp start",

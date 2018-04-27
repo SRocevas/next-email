@@ -57,9 +57,9 @@ $ npm run mail --template=NAME
 
 - [X] Change MJML to Zurb emails
 - [X] Sass integration
-- [ ] HTML minifier and beautifier
+- [X] HTML minifier and beautifier
 - [X] Inline css
-- [ ] Seperate html components
+- [X] Seperate html components
 - [X] Send test emails
 
 
