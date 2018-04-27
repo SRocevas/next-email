@@ -20,7 +20,7 @@ gulp.task("start", function () {
 
 gulp.task("zip", function () {
 
-	return gulp.start('archive');
+	return gulp.start('prepare-archive');
 });
 
 gulp.task("mail", function () {
