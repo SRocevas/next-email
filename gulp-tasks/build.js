@@ -7,5 +7,5 @@ module.exports = function (done) {
 		'html-render',
 		'compile-scss',
 		'inline-css',
-	done);
+		done);
 };
