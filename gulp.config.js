@@ -23,13 +23,13 @@ module.exports = function () {
 		},
 		scss: {
 			src: [
-				`./${srcFolder}/scss/**/*.scss`
+				`./${srcFolder}/scss/**/*.scss`,
 			],
 			include: [
-				`./node_modules/foundation-emails/scss/`
+				`./node_modules/foundation-emails/scss/`,
 			],
 			lint: [
-				`./${srcFolder}/scss/**/*.scss`
+				`./${srcFolder}/scss/**/*.scss`,
 			],
 			dest: `./${distFolder}/css/`,
 		},
