@@ -6,10 +6,10 @@ const gulp = require('gulp'),
 module.exports = function () {
 	watch(
 		config.srcFolder + '/html/*.html',
-		() => runSequence('html-render', 'inline-css', 'live-reload')
+		() => runSequence('html-render', 'compile-scss', 'live-reload')
 	);
 	watch(
-		config.srcFolder + '/html/components/*.html',
-		() => runSequence('clear-html-cache', 'html-render', 'inline-css', 'live-reload')
+		config.srcFolder + '/html/components/*.html', config.srcFolder + '/layouts/*.html',
+		() => runSequence('clear-html-cache', 'html-render', 'compile-scss', 'live-reload')
 	);
 };
