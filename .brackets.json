@@ -2,23 +2,5 @@
 	"jwolfe.file-tree-exclude.list": [
 		"node_modules",
 		".git"
-	],
-	"language.fileExtensions": {
-		"mjml": "html"
-	},
-	"bb.beautify.languages": {
-		"css": "css",
-		"ejs": "html",
-		"handlebars": "html",
-		"html": "html",
-		"javascript": "js",
-		"json": "js",
-		"less": "css",
-		"php": "html",
-		"scss": "css",
-		"svg": "html",
-		"vue": "html",
-		"xml": "html",
-		"mjml": "html"
-	}
+	]
 }
