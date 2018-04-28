@@ -4,23 +4,6 @@ var gulp = require('gulp'),
 
 require('gulp-task-loader')();
 
-gulp.task("start-safe", function () {
-	return require("check-dependencies")({
-		install: true,
-		verbose: true
-	}, function () {
-
-		return runSequence(
-			'clean',
-			'prepare-assets',
-			'watch-html',
-			'watch-images',
-			'watch-scss',
-			'live-server'
-		);
-	});
-});
-
 gulp.task("start", function () {
 
 	return runSequence(

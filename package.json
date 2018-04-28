@@ -43,7 +43,6 @@
 	},
 	"scripts": {
 		"start": "gulp start",
-		"start-safe": "gulp start-safe",
 		"zip": "gulp zip",
 		"mail": "gulp mail"
 	},
@@ -52,8 +51,5 @@
 	"bugs": {
 		"url": "https://github.com/SRocevas/next-email/issues"
 	},
-	"homepage": "https://github.com/SRocevas/next-email",
-	"devDependencies": {
-		"check-dependencies": "1.1.0"
-	}
+	"homepage": "https://github.com/SRocevas/next-email"
 }
