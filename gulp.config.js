@@ -22,10 +22,16 @@ module.exports = function () {
 			}
 		},
 		scss: {
-			src: `./${srcFolder}/scss/**/*.scss`,
-			include: `./node_modules/foundation-emails/scss/`,
-			lint: `./${srcFolder}/scss/**/*.scss`,
-			dest: `./${distFolder}/css/`
+			src: [
+				`./${srcFolder}/scss/**/*.scss`
+			],
+			include: [
+				`./node_modules/foundation-emails/scss/`
+			],
+			lint: [
+				`./${srcFolder}/scss/**/*.scss`
+			],
+			dest: `./${distFolder}/css/`,
 		},
 		images: {
 			src: `./${srcFolder}/img/**/*.{png,gif,jpg}`,
