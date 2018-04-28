@@ -6,6 +6,6 @@ const gulp = require('gulp'),
 module.exports = function () {
 	watch(
 		config.images.src,
-		() => runSequence('himage-optimization', 'live-reload')
+		() => runSequence('image-optimization', 'live-reload')
 	);
 };
