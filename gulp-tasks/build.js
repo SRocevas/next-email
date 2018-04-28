@@ -5,6 +5,7 @@ module.exports = function (done) {
 		'image-optimization',
 		'clear-image-cache',
 		'html-render',
+		'scss-linting',
 		'compile-scss',
 		'inline-css',
 		done);

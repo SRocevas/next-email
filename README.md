@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Starter base for Email templating with Gulp, [Foundation for Emails,](https://foundation.zurb.com/emails.html). It has a Gulp-powered build system with these features:
+Starter base for Email templating with Gulp, [Foundation for Emails](https://foundation.zurb.com/emails.html). It has a Gulp-powered build system with these features:
 
-- [Foundation for Emails,](https://foundation.zurb.com/emails.html) framework
+- [Foundation for Emails](https://foundation.zurb.com/emails.html) framework
 - Handlebars HTML templates with [Panini](http://github.com/zurb/panini)
 - Simplified HTML email syntax with [Inky](http://github.com/zurb/inky)
 - Sass linting integration and configuration (Working)
@@ -58,7 +58,7 @@ $ gulp send-mail --template=newsletter
 - [X] Inline css
 - [X] Seperate html components
 - [X] Send test emails
-- [ ] Sass linting
+- [X] Sass linting
 - [ ] Set environments
 
 

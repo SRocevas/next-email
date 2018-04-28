@@ -6,6 +6,6 @@ const gulp = require('gulp'),
 module.exports = function () {
 	watch(
 		config.scss.src,
-		() => runSequence('clear-html-cache', 'compile-scss', 'html-render', 'inline-css', 'live-reload')
+		() => runSequence('clear-html-cache', 'scss-linting', 'compile-scss', 'html-render', 'inline-css', 'live-reload')
 	);
 };
