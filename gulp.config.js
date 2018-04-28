@@ -45,8 +45,8 @@ module.exports = function () {
 			}
 		},
 		zip: {
-			src: `./${distFolder}/*`,
-			dest: `./${distFolder}/*`
+			src: `./${distFolder}/**/*`,
+			dest: `./${distFolder}/`
 		},
 		server: {
 			options: {
