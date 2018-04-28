@@ -8,7 +8,7 @@ gulp.task("start", function () {
 
 	return runSequence(
 		'clean',
-		'prepare-assets',
+		'build',
 		'watch-all',
 		'live-server'
 	);
@@ -18,7 +18,7 @@ gulp.task("zip", function () {
 
 	return runSequence(
 		'clean',
-		'prepare-assets',
+		'build',
 		'compress-files'
 	);
 });
@@ -27,7 +27,7 @@ gulp.task("mail", function () {
 
 	return runSequence(
 		'clean',
-		'prepare-assets',
+		'build',
 		'send-mail'
 	);
 });

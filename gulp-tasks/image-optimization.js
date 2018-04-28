@@ -11,6 +11,5 @@ module.exports = function (done) {
 				optimizationLevel: 7
 			})
 		])))
-		.pipe(gulp.dest(config.images.dest))
-		cache.clearAll(done);
+		.pipe(gulp.dest(config.images.dest));
 };

@@ -3,6 +3,7 @@ module.exports = function (done) {
 
 	return runSequence(
 		'image-optimization',
+		'clear-image-cache',
 		'html-render',
 		'compile-scss',
 		'inline-css',
