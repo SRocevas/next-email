@@ -17,7 +17,7 @@ Starter base for Email templating with Gulp, [Zurb Emails](https://foundation.zu
 To setup new project clone this repo:
 
 ```
-$ git://github.com/SRocevas/next-email.git
+$ git://github.com/srocevas/next-email.git
 ```
 
 Inside project folder install dependencies from package.json:
@@ -29,30 +29,24 @@ $ npm i
 To start developing run npm script command:
 
 ```
-$ npm run start
+$ gulp start
 ```
-
-Or launch command with "check-dependencies" mode, which will check if all needed dependencies are installed:
-
-```
-$ npm run start-safe
-```
-
-It will start all development tasks: prepare assets, compile html and css, and add file watchers.
 
 ZIP compress files:
 
 ```
-$ npm run zip
+$ gulp zip
 ```
 
-Send a test email using your default configuration in nodemailer.config.js
+Send a test email using your default configuration in mailer.config.js
 
 ```
-$ npm run mail --template=NAME
+$ gulp mail --template=NAME
 ```
-
-> gulp  send-mail --template=newsletter
+or
+```
+$ gulp send-mail --template=newsletter
+```
 
 
 ## TODO
