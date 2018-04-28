@@ -60,6 +60,7 @@ $ gulp send-mail --template=newsletter
 - [X] Send test emails
 - [X] Sass linting
 - [ ] Set environments
+- [ ] HTML WC3 validator
 
 
 ## License
